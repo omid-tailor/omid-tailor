@@ -15,6 +15,17 @@ jobs:
       - name: Get project
         uses: actions/checkout@v4
 
+      - name: Extract project ZIP
+        run: |
+          unzip -q omid_tailor_android_github_v2.zip -d extracted
+          PACKAGE_JSON=$(find extracted -type f -name package.json -print -quit)
+          if [ -z "$PACKAGE_JSON" ]; then
+            echo "ERROR: package.json not found inside ZIP"
+            exit 1
+          fi
+          PROJECT_DIR=$(dirname "$PACKAGE_JSON")
+          cp -a "$PROJECT_DIR"/. "$GITHUB_WORKSPACE"/
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -43,4 +54,3 @@ jobs:
         with:
           name: OMID-TAILOR-APK
           path: android/app/build/outputs/apk/debug/*.apk
-
