@@ -1,0 +1,61 @@
+*{box-sizing:border-box}body{margin:0;background:#f3f6f2;color:#1b2923;font-family:Tahoma,Arial,sans-serif}header{background:linear-gradient(120deg,#0d3029,#175744);color:#fff;padding:18px 16px 22px;border-radius:0 0 25px 25px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 8px 24px #123d3228}.brand{display:flex;align-items:center;gap:10px}.brand img{width:54px;height:54px}.brand small,.today span{font-size:10px;color:#d9c17d}.brand h1{font-size:17px;margin:7px 0 0}.today{text-align:left;display:grid;gap:6px}.today b{font-size:16px;color:#f2d78d}nav{display:flex;overflow:auto;gap:6px;padding:10px;background:#fff;position:sticky;top:0;z-index:3;box-shadow:0 3px 12px #0001}button{border:1px solid #dce6df;background:#fff;color:#174638;border-radius:12px;padding:11px 13px;font:inherit;font-size:12px;white-space:nowrap}nav button{border:0;background:#eff4f0}nav button.active,.gold{background:linear-gradient(135deg,#174b3c,#0e352c);color:#f3d68b;border:0}main{max-width:760px;margin:auto;padding:18px 14px 40px}.tab{display:none}.tab.active{display:block}h2{font-size:19px;margin:8px 0 16px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stats article,.panel,.item{background:#fff;border:1px solid #e6ece7;border-radius:17px;padding:14px;box-shadow:0 5px 15px #173b2c0a}.stats span,.item small{display:block;color:#718078;font-size:11px}.stats b{display:block;color:#16513f;font-size:20px;margin-top:9px}.panel{margin-top:14px}.panel button{margin:5px 0}.heading{display:flex;align-items:center;justify-content:space-between;gap:8px}.heading h2{margin-bottom:12px}input,select{width:100%;padding:12px;border:1px solid #dce5de;border-radius:11px;background:#fff;font:inherit;font-size:13px;margin:6px 0 12px}label{display:block;font-size:12px;color:#526259;margin:9px 0}dialog{width:min(94%,500px);max-height:90vh;overflow:auto;border:0;border-radius:20px;padding:20px;box-shadow:0 18px 60px #0005}dialog::backdrop{background:#102a23bb}dialog h3{color:#15503e;margin-top:0}dialog h4{font-size:13px;color:#17513f;margin:14px 0 5px}.measure{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.actions{display:flex;gap:8px;margin-top:14px}.actions button{flex:1}.list{display:grid;gap:10px;margin-top:12px}.item b{font-size:14px;color:#174b3c}.item p{font-size:11px;line-height:1.9;color:#66746c}.item button{margin-top:5px}.measureSummary{background:#f1f6f2;padding:10px;border-radius:10px;font-size:11px;line-height:2;color:#375346}.muted{font-size:11px;color:#748078;line-height:1.8}.file{display:block;border:1px dashed #a7bcae;padding:12px;border-radius:12px;color:#174b3c}.file input{margin-bottom:0}@media(max-width:400px){.stats{grid-template-columns:1fr 1fr}.today b{font-size:14px}}
+.samples-panel{margin-top:18px}.samples-panel h3{margin:0;color:#174b3c}.sample-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}.sample-card{min-width:0;border:1px solid #e2e9e3;border-radius:13px;padding:8px;background:#fbfdfb}.sample-card img{width:100%;height:145px;object-fit:cover;border-radius:9px;background:#edf2ee}.sample-caption{font-size:10px;color:#526259;overflow-wrap:anywhere;margin:7px 0}.sample-card button{width:100%;padding:8px;color:#a33;background:#fff4f2;border-color:#f0d4ce}@media(min-width:560px){.sample-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* OMID TAILOR - navy & gold visual identity */
+body{background:#f3f5f8;color:#1c2b40}
+header{background:linear-gradient(120deg,#071a33,#16365c);border-radius:0 0 22px 22px;box-shadow:0 8px 24px #071a3325}
+.brand small,.today span{color:#e8c779}
+.today b{color:#f2d58e}
+nav{border-bottom:1px solid #e7dfcc}
+nav button{background:#f1f3f7;color:#203c5f}
+nav button.active,.gold{background:linear-gradient(135deg,#d8b35f,#b68d3f);color:#102746;border:0}
+.stats article,.panel,.item{border-color:#e5e9ef;box-shadow:0 5px 16px #132b4610}
+.stats b,.item b,.samples-panel h3,dialog h3,dialog h4{color:#17385e}
+button{color:#17385e;border-color:#dfe5ed}
+dialog::backdrop{background:#071a33bb}
+.measureSummary{background:#eff3f8;color:#40536d}
+.sample-card{border-color:#e2e7ef;background:#fff}
+.sample-card img{background:#edf1f6}
+.file{border-color:#c4b17f;color:#17385e}
+.hero-banner{position:relative;overflow:hidden;border-radius:20px;margin:0 0 16px;min-height:230px;background:#0b203d;box-shadow:0 10px 25px #0c244022}
+.hero-banner>img{width:100%;height:270px;object-fit:cover;display:block;opacity:.78}
+.hero-banner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,20,39,.05),rgba(5,20,39,.9))}
+.hero-copy{position:absolute;z-index:1;right:18px;top:50%;transform:translateY(-50%);width:58%;color:white}
+.hero-kicker{font-size:11px;letter-spacing:2px;color:#f0d28a;font-weight:bold}
+.hero-copy h2{font-size:clamp(17px,4vw,25px);line-height:1.6;color:#fff;margin:8px 0}
+.hero-copy p{font-size:12px;color:#f4e8c8;margin:4px 0 14px}
+.hero-cta{background:linear-gradient(135deg,#e6c46f,#bd9448);color:#132b49;border:0;font-weight:bold}
+.showcase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0 0 20px}
+.showcase-card{position:relative;overflow:hidden;border-radius:14px;min-width:0;height:130px;background:#102746;box-shadow:0 5px 15px #12294320}
+.showcase-card img{width:100%;height:100%;object-fit:cover;display:block;opacity:.82}
+.showcase-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(5,20,39,.92))}
+.showcase-card div{position:absolute;z-index:1;bottom:9px;right:9px;left:5px;color:white;display:grid;gap:3px}
+.showcase-card b{font-size:11px;color:#f4d58a}
+.showcase-card span{font-size:9px;color:#fff}
+@media(max-width:430px){.hero-banner>img{height:235px}.hero-copy{width:65%;right:13px}.showcase-grid{gap:6px}.showcase-card{height:112px}.showcase-card div{right:6px}.showcase-card b{font-size:10px}.showcase-card span{font-size:8px}}
+
+/* Official OMID TAILOR logo */
+.brand img{width:62px;height:62px;object-fit:contain;border-radius:50%;background:#050505;border:1px solid #d7b45f;box-shadow:0 3px 12px #0005}
+.brand small{font-weight:700;letter-spacing:1.5px;color:#edcf82}
+.hero-logo{width:86px;height:86px;object-fit:contain;border-radius:50%;border:1px solid #d8b65f;background:#050505;box-shadow:0 5px 18px #0008;margin-bottom:5px}
+.site-footer{max-width:760px;margin:0 auto 22px;padding:14px 18px;display:flex;align-items:center;justify-content:center;gap:14px;background:linear-gradient(120deg,#071a33,#16365c);border:1px solid #c8a65b;border-radius:18px;color:#fff}
+.site-footer img{width:66px;height:66px;object-fit:contain;border-radius:50%;background:#050505;border:1px solid #d7b45f}
+.site-footer div{display:grid;gap:6px}.site-footer strong{font-size:14px;color:#f0d28a}.site-footer span{font-size:11px;color:#fff}
+@media(max-width:430px){.brand img{width:52px;height:52px}.hero-logo{width:66px;height:66px}.site-footer img{width:56px;height:56px}}
+
+/* Refreshed clean workshop dashboard */
+:root{color-scheme:light}body{background:#f6f8fb;color:#202b3a;font-family:Tahoma,Arial,sans-serif}header{background:#fff;color:#203044;border-radius:0 0 18px 18px;box-shadow:0 4px 18px #26364b12;border-bottom:1px solid #e8edf3;padding:13px 16px}header .brand h1{color:#24364b}header .brand small{color:#647b92}header .today span{color:#7b8998}header .today b{color:#1d6c70}nav{background:#fff;border-bottom:1px solid #e8edf3;gap:7px;padding:9px 12px;box-shadow:0 3px 12px #26364b0b}nav button{background:#f1f4f8;color:#4c5c70;border-radius:10px;font-weight:600}nav button.active,.gold{background:#176f73;color:#fff;border:0}main{max-width:900px;padding:18px 14px 42px}h2{color:#263a50}h3{color:#31465d}.stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.stats article,.panel,.item{border:1px solid #e6ebf1;border-radius:14px;box-shadow:0 4px 14px #23364b0a}.stats article{padding:15px}.stats b{color:#176f73}.panel{padding:17px;margin-top:14px}.item{padding:15px}.item b{color:#253e57}.item small,.muted{color:#7b8795}.hero-banner{border-radius:18px;box-shadow:0 8px 25px #1b34431a}.showcase-card{border-radius:13px}.site-footer{background:#fff;color:#25384c;border:1px solid #e4eaf0;box-shadow:0 4px 15px #22364a0b}.site-footer strong{color:#176f73}.site-footer span{color:#718092}input,select{border:1px solid #dce4ed;background:#fbfcfe;border-radius:10px;color:#26364a}input:focus,select:focus{outline:2px solid #b9dfe0;border-color:#4e9c9e}button{border-radius:10px;cursor:pointer}button:not(.gold):hover{background:#f0f6f7}.expense-form{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}.expense-form button{align-self:end;min-height:43px;margin:6px 0 12px}.date-filter{display:grid;grid-template-columns:1fr 1fr;gap:12px}.report-stats{margin-top:14px}.report-stats article:last-child b{color:#176f73}.expense-panel{border-top:3px solid #4c9a9b}.expense-panel h3{margin-top:0}.heading{margin-bottom:10px}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.expense-form,.date-filter{grid-template-columns:1fr}.expense-form button{width:100%}.brand h1{font-size:14px}.today b{font-size:14px}main{padding:14px 11px 34px}.panel{padding:14px}}
+/* OMID TAILOR V2: clean light accounting workspace */
+#financeChart{width:100%;height:220px;display:block;background:#fbfcfe;border:1px solid #edf1f5;border-radius:12px;margin-top:10px}
+#fabric .stats{margin:12px 0}.stats article b{overflow-wrap:anywhere}
+#fabricSaleForm,#fabricForm{gap:5px 12px}
+#fabricSaleForm button{min-height:44px}
+@media(max-width:560px){#fabricSaleForm{grid-template-columns:1fr}#finance .stats{grid-template-columns:repeat(2,minmax(0,1fr))}#finance .date-filter{grid-template-columns:1fr}}
+
+/* OMID TAILOR dashboard refresh — preserve existing navigation, forms and brand assets */
+body{background:#f5f8fc;color:#243247}header{background:linear-gradient(115deg,#ffffff,#f8fbff);border-bottom:1px solid #e5edf6;box-shadow:0 5px 22px #17365d0c}header .brand h1{color:#1e3552}.today b{color:#176f73}nav button.active,.gold{background:linear-gradient(120deg,#176f9a,#155d83);color:#fff}.stats article{position:relative;overflow:hidden;background:#fff;border:1px solid #e4edf5;box-shadow:0 7px 22px #17365d0b;border-radius:17px}.stats article:nth-child(4n+1){border-top:3px solid #2384bd}.stats article:nth-child(4n+2){border-top:3px solid #20a078}.stats article:nth-child(4n+3){border-top:3px solid #e59a32}.stats article:nth-child(4n){border-top:3px solid #687fba}.stats b{color:#176f9a}.panel{border-radius:17px;box-shadow:0 6px 20px #17365d0a}.hero-banner{box-shadow:0 12px 30px #17365d20}.showcase-card{box-shadow:0 7px 20px #17365d15}button{transition:transform .15s ease,filter .15s ease}button:active{transform:scale(.98)}
+
+
+/* OMID TAILOR: clickable customer profiles, model settings and color accents */
+.customer-card{cursor:pointer;transition:transform .15s,border-color .15s}.customer-card:active{transform:scale(.99)}.customer-head{display:flex;align-items:center;gap:10px}.customer-no{display:inline-grid;place-items:center;min-width:36px;height:34px;padding:0 8px;border-radius:10px;background:#e8f3fb;color:#176f9a;font-weight:800;direction:ltr}.detail-number{background:#edf6ff;border-radius:12px;padding:12px;color:#176f9a}.detail-measures{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.detail-measures div,.detail-order{background:#f5f8fc;border:1px solid #e6edf5;border-radius:10px;padding:10px;display:flex;justify-content:space-between;gap:8px}.detail-measures b{color:#176f9a;direction:ltr}.model-setting{padding:10px 0;border-top:1px solid #edf1f5}.model-list{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.model-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;background:#edf6fb;border-radius:9px;color:#24506b;font-size:12px}.model-chip button{padding:2px 7px;color:#b44;background:#fff;border:0}.model-setting .actions{align-items:center}.model-setting .actions input{margin:0}.customer-detail{line-height:1.9}
