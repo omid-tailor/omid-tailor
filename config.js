@@ -1,2 +1,1 @@
-/* Public Google OAuth configuration only. Never put a Client Secret here. */
-window.OMID_GOOGLE_CLIENT_ID = "YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com";
+window.OMID_GOOGLE_CLIENT_ID = "266706780512-fqbk00trrqmv030nreafhn28fm10a8vg.apps.googleusercontent.com";
